@@ -28,7 +28,7 @@ displayButtons()
 $("#buttons").on("click", "button.buttonclick", function() {
     console.log("click")
     var displayBtnWord = $(this).text()
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + displayBtnWord + "&api_key=B0xBBRNMe5llt0bAAEG3BWbaGe2URH3K&limit=10"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + displayBtnWord + "&api_key=B0xBBRNMe5llt0bAAEG3BWbaGe2URH3K&limit=10"
 
     $.ajax({
         url: queryURL,
